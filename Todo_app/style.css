@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: coral;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top {
+    font-family: "Playwrite NO", cursive;
+    font-size: xx-large;
+}
+
+#textbox {
+    text-align: center;
+    font-family: "Playwrite NO", cursive;
+    font-size: xx-large;
+    width: 50%;
+    border: 2px solid black;
+
+}
+
+#btn {
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.1em;
+    font-size: 3.4rem;
+    color: black;
+    background-color: aqua;
+    margin-right: 2px;
+
+
+}
+
+.newC {
+    text-decoration: line-through;
+}
+
+.tick-check {
+    transform: scale(2); /* This helps in scaling the element checkbox */
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.task-container input {
+    order: 1; /* Helps in ordering content of task-container */           
+}
+
+.task-container li {
+    order: 2;
+}
+
+.task-container button {
+    order: 3;
+    transform: scale(1.7);
+}
+
+
+/* for Mobile View  */
+
+/* I added a little bit of properties */
+
+
+@media screen and (max-width: 595px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color:aliceblue;
+    }
+
+    .task-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    
+    .task-container input {
+        order: 1; 
+        margin-top: 0.5rem;
+
+    } 
+    
+    .task-container li {
+        order: 2;
+    } 
+    
+     .task-container button {
+        order: 3;
+        transform: scale(1);
+        margin-right: 1rem;
+    }
+    #btn {
+        border: none;
+        border-radius: 5px;
+        /* margin-left: 0.1em; */
+        font-size: 1.5rem;
+        color: black;
+        background-color: aqua;
+        margin-right: 2px;
+    
+    
+    }
+
+    #textbox {
+        text-align: center;
+        font-family: "Playwrite NO", cursive;
+        font-size: small;
+        /* width: 50%; */
+        border: 2px solid black;
+    
+    }
+
+    .task-container{
+        font-size: 18px;
+    }
+    
+
+  }
